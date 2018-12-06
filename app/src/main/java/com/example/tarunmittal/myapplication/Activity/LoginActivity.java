@@ -1,5 +1,6 @@
 package com.example.tarunmittal.myapplication.Activity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -181,6 +182,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
+
                         if (task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(), "User signed in Sucessfully", Toast.LENGTH_SHORT).show();
 
@@ -222,6 +224,9 @@ public class LoginActivity extends AppCompatActivity {
                         } else {
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 Toast.makeText(getApplicationContext(), "Invalid OTP", Toast.LENGTH_LONG).show();
+                                b2.setBackgroundColor(Color.parseColor("#FFF59D"));
+                                e2.setText("");
+
                             }
                         }
 
@@ -234,7 +239,7 @@ public class LoginActivity extends AppCompatActivity {
 
         String inputcode = e2.getText().toString();
 
-        if(inputcode.length()==6) {
+        if (inputcode.length() == 6) {
 
             if (verification_code != null) {
                 b2.setBackgroundColor(Color.DKGRAY);
@@ -252,6 +257,7 @@ public class LoginActivity extends AppCompatActivity {
 
             PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verification_code1, inputcode1);
             signInWIthNumber(credential);
+
         } else {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
@@ -271,6 +277,17 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     class StudentTask extends android.os.AsyncTask<String, Void, String> {
+
+        ProgressDialog attendanceDialog;
+
+        @Override
+        protected void onPreExecute() {
+            attendanceDialog = new ProgressDialog(mContext);
+            attendanceDialog.setMessage("Please Wait!");
+            attendanceDialog.setTitle("Loading!");
+            attendanceDialog.show();
+            super.onPreExecute();
+        }
 
         Context mContext;
 
@@ -296,6 +313,7 @@ public class LoginActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
 
             super.onPostExecute(s);
+            attendanceDialog.dismiss();
         }
 
     }
