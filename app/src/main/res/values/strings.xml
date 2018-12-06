@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="theme">Theme</string>
+    <string name="logout">LogOut</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="attendance">Attendance</string>
+    <string name="marks">Marks</string>
+    <string name="announcement">Announcement</string>
+    <string name="suspention">Suspension</string>
+    <string name="placement">Placement</string>
+    <string name="performance">Performance</string>
+    <string name="mentor">Mentor</string>
+    <string name="vedio_calling">Video calling</string>
+    <string name="parent">ParentPortal</string>
+    <string name="data_msg2">problem building the url</string>
+    <string name="login_titlw">LOGIN</string>
+    <string name="login_title">Login</string>
+    <string name="title_text2">TO</string>
+    <string name="title_text3">YOUR ACCOUNT</string>
+    <string name="button_text">LOGIN</string>
+    <string name="studentdetails">Student Details</string>
+    <string name="companyname"><u>CompanyName</u></string>
+
+</resources>

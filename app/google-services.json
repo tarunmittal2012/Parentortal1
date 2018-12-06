@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "996560602964",
+    "firebase_url": "https://parent-portal-776a3.firebaseio.com",
+    "project_id": "parent-portal-776a3",
+    "storage_bucket": "parent-portal-776a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996560602964:android:5560767716e75a24",
+        "android_client_info": {
+          "package_name": "com.example.tarunmittal.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996560602964-pkptte4k8vkg4c6s0gv456s0v6fr2si7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm88e1czu8lunwzMqNEk9mHAT2hU5Vy5s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

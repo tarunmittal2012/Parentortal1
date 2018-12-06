@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#000"
+
+              android:orientation="vertical"
+              tools:context=".Fragment.AttendanceFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableTop="@drawable/no_internet"
+        android:text="NO INTERNET CONNECTION"
+        android:textSize="18sp"
+        android:id="@+id/no_internet"
+        android:visibility="gone"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#000"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/sub1_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFF59D"
+            android:text="CSE101"
+            android:textColor="#d50000"/>
+
+        <Button
+            android:id="@+id/sub2_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="#FFF59D"
+            android:text="INT101"
+            android:textColor="#d50000"/>
+
+        <Button
+            android:id="@+id/sub3_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="#FFF59D"
+            android:text="PEV101"
+            android:textColor="#d50000"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#FFF59D"
+        android:id="@+id/calculate_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+
+                android:text="Total Lectures: "
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/total_lac"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="#4CAF50"
+
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="1540"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Present Lectures: "
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/present_lac"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+
+                android:paddingLeft="10dp"
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+
+                android:textStyle="bold"
+                tools:text="1540"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Absent Lectures: "
+                android:textColor="#d50000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/absent_lac"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+
+                android:paddingLeft="10dp"
+                android:textColor="#d50000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="1540"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Attendance Percent(%): "
+                android:textColor="#d50000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/total_percent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+
+                android:paddingLeft="10dp"
+                android:textColor="#8E24AA"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="1540"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/attendance_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="#fff">
+
+    </ListView>
+</LinearLayout>

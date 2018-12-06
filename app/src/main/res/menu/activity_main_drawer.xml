@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/attendance"
+            android:icon="@drawable/attendence"
+            android:title="Attendance"/>
+        <item
+            android:id="@+id/marks"
+            android:icon="@drawable/marks"
+            android:title="Marks"/>
+        <item
+            android:id="@+id/announcement"
+            android:icon="@drawable/announcement"
+            android:title="Announcement"/>
+        <item
+            android:id="@+id/mentor"
+            android:icon="@drawable/mentor"
+            android:title="Mentor"/>
+        <item
+            android:id="@+id/suspention"
+            android:icon="@drawable/suspention"
+            android:title="Suspention"/>
+        <item
+            android:id="@+id/performance"
+            android:icon="@drawable/performance"
+            android:title="Performance"/>
+        <item
+            android:id="@+id/placement"
+            android:icon="@drawable/placement"
+            android:title="Placement"/>
+        <item
+            android:id="@+id/show_detail"
+            android:icon="@drawable/mentor"
+            android:title="@string/studentdetails"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_lock_open_black_24dp"
+            android:title="@string/logout"/>
+    </group>
+
+
+</menu>
